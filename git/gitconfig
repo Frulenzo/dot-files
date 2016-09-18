@@ -1,0 +1,32 @@
+[user]
+	name=xxxxxxxx
+	email=xxxxxxx
+
+[push]
+	default=simple
+
+[color] 
+        diff = auto 
+        status = auto 
+        branch = auto 
+        interactive = auto 
+        ui = true 
+        pager = true
+[branch]
+	autosetuprebase = always
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	lol = log --oneline -15
+	ci = commit
+	lod = log --oneline --decorate --graph -15
+	co = checkout
+	br = branch
+	st = status -sb
+	last = log -1 HEAD
+	df = diff
+	lg = log -p
+	lol = log --graph --pretty=format:'%C(yellow)%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cblue(%cr)%Creset' --abbrev-commit --date=relative
+	lola = log --graph --pretty=format:'%C(yellow)%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cblue(%cr)%Creset' --abbrev-commit --date=relative --all
+	ls= ls -files
+
